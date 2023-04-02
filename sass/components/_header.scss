@@ -1,0 +1,69 @@
+.header {
+  background: $pure-white-color;
+  border: 1px solid #ececec;
+
+  &__contact {
+    margin-left: 310px;
+    padding: 30px 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  &__contact-division {
+    margin-right: 50px;
+  }
+
+  &__mail,
+  &__phone {
+    display: flex;
+    color: $grey-color;
+    align-items: center;
+  }
+
+  &__mail:hover .header__icon,
+  &__mail:focus .header__icon,
+  &__phone:hover .header__icon,
+  &__phone:focus .header__icon {
+    fill: $link-hf-color;
+    color: $link-hf-color;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: $grey-color;
+  }
+
+  &__logo {
+    padding: 23px 0;
+  }
+}
+
+.navigation {
+  display: flex;
+  margin-left: 93px;
+  padding: 30px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  &__page:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__page.current {
+    color: $link-hf-color;
+  }
+}
+
+.current::after {
+  top: 31px;
+  display: block;
+  content: '';
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}

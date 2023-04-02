@@ -1,0 +1,127 @@
+.footer {
+  padding: 60px 0;
+  background: #2f303a;
+
+  &__submit {
+    border: none;
+    border-radius: 4px;
+    padding: 13px 28px 13px 39px;
+    background: $link-hf-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &__submit > span {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #ffffff;
+  }
+
+  &__info {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__form {
+    padding-top: 10px;
+    margin-left: 13px;
+    width: 570px;
+  }
+
+  &__input {
+    height: 50px;
+    width: 358px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  &__input::placeholder {
+    padding-left: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__subscribe {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: $pure-white-color;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  &__send-icon {
+    height: 24px;
+    width: 24px;
+  }
+
+  &__justify {
+    justify-content: space-between;
+  }
+
+  &__contact {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__social-media {
+    padding-top: 12px;
+    margin-left: 70px;
+  }
+
+  &__sm-list {
+    width: 286px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__sm-title {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: $pure-white-color;
+    margin-bottom: 20px;
+  }
+
+  &__sm-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &__sm-circle:hover,
+  &__sm-circle:focus {
+    background-color: $link-hf-color;
+  }
+
+  &__smc-icon {
+    width: 20px;
+    height: 20px;
+    fill: $pure-white-color;
+  }
+}
+
+address {
+  width: 230px;
+  font-style: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $pure-white-color;
+  margin-top: 9px;
+}

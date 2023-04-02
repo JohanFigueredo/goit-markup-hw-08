@@ -1,0 +1,42 @@
+.clients {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+
+  &__title {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 44.02px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 81px;
+    border: 1px solid $light-grey-color;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 106px;
+    height: 52.83px;
+    fill: $light-grey-color;
+  }
+
+  &__box:hover,
+  &__box:focus {
+    border: 1px solid $link-hf-color;
+  }
+
+  &__box:hover &__icon,
+  &__box:focus &__icon {
+    fill: $link-hf-color;
+  }
+}

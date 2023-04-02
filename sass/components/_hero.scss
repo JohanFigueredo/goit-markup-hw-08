@@ -1,0 +1,38 @@
+.hero {
+  padding: 200px 0;
+  background: #2f303a;
+  background: url(../images/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .hero__title {
+    width: 696px;
+    margin: 0 auto 30px auto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $pure-white-color;
+  }
+
+  &__button {
+    background: $link-hf-color;
+    padding: 10px 32px;
+    border-radius: 4px;
+    margin: 0 auto;
+    border: none;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background-color: #1784dd;
+  }
+
+  &__button-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    color: $pure-white-color;
+  }
+}

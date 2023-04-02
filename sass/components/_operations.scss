@@ -1,0 +1,47 @@
+.operations {
+  padding: 0;
+  gap: 30.26px;
+}
+
+.operation {
+  display: flex;
+  width: 370px;
+  height: 294px;
+
+  &__caption {
+    display: flex;
+    font-size: 14px;
+    flex-wrap: wrap;
+    align-content: center;
+    letter-spacing: 0.03em;
+    color: $pure-white-color;
+  }
+
+  &__title {
+    margin: 0 auto 40px auto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+.keyboard {
+  background-image: url(../images/keyboard.jpg);
+}
+
+.laptop {
+  background-image: url(../images/laptop.jpg);
+}
+
+.tablet {
+  background-image: url(../images/tablet.jpg);
+}
+
+.inv-box {
+  width: 370px;
+  display: flex;
+  margin-top: 224px;
+  background: rgba(47, 48, 58, 0.8);
+}
