@@ -216,7 +216,7 @@ a:focus {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30.26px;
-  padding: 0;
+  padding: 0px;
 }
 
 .operation {

@@ -20,9 +20,14 @@
   <body>
     <header class="header">
       <section>
-        <div class="flex container">
+        <div class="mbl container">
           <a class="header__logo logo" href="./index.html">WebStudio</a>
           <nav>
+          <button class="mbl__menu" type="button">
+              <svg class="menu__open" width="40px" height="40px">
+                <use href="./images/icons.svg#icon-icon-burger"></use>
+              </svg>
+            </button>
             <ul class="navigation">
               <li class="navigation__page current">
                 <a href="./index.html">Estudio</a>
@@ -36,7 +41,7 @@
             </ul>
           </nav>
           <ul class="header__contact flex">
-            <li class="header__contact-division">
+            <li>
               <a class="header__mail" href="mailto:info@devstudio.com">
                 <svg class="header__icon" width="16" height="12">
                   <use
@@ -62,7 +67,7 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="mbl__title container">
           <h1 class="hero__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
           <button class="flex hero__button" type="button"  data-modal-open>
             <span class="hero__button-title">Solicite nuestro servicio</span>
@@ -72,66 +77,54 @@
       <section class="semi-section">
         <div class="container">
           <ul class="features flex">
-            <li class="features__division">
+            <li class="features__container">
               <div class="features__box">
                 <svg class="antena" width="65" height="70">
                   <use href="./images/icons.svg#icon-antena"></use>
                 </svg>
               </div>
-              <div class="features__title"><h3>ATENCIÓN A LOS DETALLES</h3></div>
-              <div class="features__text">
-                <p>
+              <h3 class="features__title">ATENCIÓN A LOS DETALLES</h3>
+                <p class="features__text">
                   Nos adentramos en todos los detalles y procesos de su negocio,
                   para así desarrollar una solución a su medida.
                 </p>
-              </div>
             </li>
-            <li class="features__division">
+            <li class="features__container">
               <div class="features__box">
                 <svg width="65" height="70">
                   <use href="./images/icons.svg#icon-reloj"></use>
                 </svg>
               </div>
-              <div class="features__title">
-                <h3>PUNTUALIDAD</h3>
-              </div>
-              <div class="features__text">
-                <p>
+              <h3 class="features__title">PUNTUALIDAD</h3>
+                <p class="features__text">
                   Con nosotros, usted puede sentirse seguro y protegido. Un
                   principio importante de la empresa: respetar su tiempo y
                   respetar los plazos acordados
                 </p>
-              </div>
             </li>
-            <li class="features__division">
+            <li class="features__container">
               <div class="features__box">
                 <svg width="65" height="70">
                   <use href="./images/icons.svg#icon-plan"></use>
                 </svg>
               </div>
-              <div class="features__title">
-                <h3>PLANIFICACIÓN</h3>
-              </div>
-              <div class="features__text">
-                <p>
+                <h3 class="features__title">PLANIFICACIÓN</h3>
+                <p class="features__text">
                   Usted podrá observar y participar en cada fase del desarrollo
                   y aplicación de soluciones
                 </p>
-              </div>
             </li>
-            <li>
+            <li class="features__container">
               <div class="features__box">
                 <svg width="65" height="70">
                   <use href="./images/icons.svg#icon-tech"></use>
                 </svg>
               </div>
-              <div class="features__title"><h3>TECNOLOGÍA MODERNA</h3></div>
-              <div class="features__text">
-                <p>
+              <h3 class="features__title">TECNOLOGÍA MODERNA</h3>
+                <p class="features__text">
                   Usamos herramientas innovadoras para resolver las tareas
                   asignadas. Es hora de simplificar los procesos laborales.
                 </p>
-              </div>
             </li>
           </ul>
         </div>

@@ -3,16 +3,10 @@
   border: 1px solid #ececec;
 
   &__contact {
-    margin-left: 310px;
-    padding: 30px 0px;
     line-height: 1.14;
     font-weight: 500;
     font-size: 14px;
     display: none;
-  }
-
-  &__contact-division {
-    margin-right: 50px;
   }
 
   &__mail,
@@ -42,7 +36,6 @@
 
 .navigation {
   display: none;
-  margin-left: 93px;
   padding: 30px 0;
   font-weight: 500;
   font-size: 14px;
@@ -58,9 +51,24 @@
   }
 }
 
-@media (min-width: 769px) {
-  .header__contact,
+@media (min-width: 768px) {
   .navigation {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header__contact {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__contact {
+    gap: 40px;
     display: flex;
   }
 }
@@ -74,4 +82,29 @@
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
+}
+
+.mbl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__menu {
+    border: none;
+    display: flex;
+    background: none;
+  }
+
+  &__title {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mbl__menu {
+    display: none;
+  }
 }
