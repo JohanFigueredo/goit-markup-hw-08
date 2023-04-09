@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -89,15 +89,10 @@ a:focus {
   border: 1px solid #ececec;
 }
 .header__contact {
-  margin-left: 310px;
-  padding: 30px 0px;
   line-height: 1.14;
   font-weight: 500;
   font-size: 14px;
   display: none;
-}
-.header__contact-division {
-  margin-right: 50px;
 }
 .header__mail, .header__phone {
   display: flex;
@@ -118,7 +113,6 @@ a:focus {
 
 .navigation {
   display: none;
-  margin-left: 93px;
   padding: 30px 0;
   font-weight: 500;
   font-size: 14px;
@@ -132,9 +126,22 @@ a:focus {
   color: #2196f3;
 }
 
-@media (min-width: 769px) {
-  .header__contact,
+@media (min-width: 768px) {
   .navigation {
+    display: flex;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header__contact {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__contact {
+    gap: 40px;
     display: flex;
   }
 }
@@ -149,16 +156,37 @@ a:focus {
   border-radius: 2px;
 }
 
-.hero {
+.mbl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mbl__menu {
+  border: none;
+  display: flex;
+  background: none;
+}
+.mbl__title {
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
   padding: 200px 0;
+}
+
+@media (min-width: 768px) {
+  .mbl__menu {
+    display: none;
+  }
+}
+.hero {
   background: #2f303a;
   background: url(../images/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.hero .hero__title {
+.hero__title {
   width: 696px;
-  margin: 0 auto 30px auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -184,14 +212,21 @@ a:focus {
 }
 
 .features {
+  gap: 30px;
   padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.features__container {
+  max-width: 450px;
 }
 .features__box {
-  width: 270px;
-  height: 120px;
+  width: 100%;
+  display: flex;
   border-radius: 4px;
   margin-bottom: 30px;
   padding: 25px 102.34px;
+  justify-content: center;
   background: #f5f4fa;
 }
 .features__title {
@@ -201,9 +236,6 @@ a:focus {
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
-.features__division {
-  margin-right: 30px;
-}
 .features__text {
   font-weight: 400;
   font-size: 14px;
@@ -212,11 +244,21 @@ a:focus {
   color: #757575;
 }
 
+@media (min-width: 481px) and (max-width: 1199px) {
+  .features__container {
+    max-width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .features__container {
+    max-width: 270px;
+  }
+}
 .operations {
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30.26px;
-  padding: 0px;
+  gap: 30px;
+  padding: 0;
 }
 
 .operation {

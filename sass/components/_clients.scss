@@ -1,9 +1,22 @@
 .clients {
-  display: flex;
-  align-items: center;
+  justify-content: center;
+  max-width: 480px;
   flex-wrap: wrap;
-  gap: 30px;
+  display: flex;
+  margin: auto;
   padding: 0;
+  gap: 30px;
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    margin: auto;
+    max-width: 768px;
+    justify-content: center;
+  }
+
+  @media (min-width: 1200px) {
+    justify-content: space-between;
+    min-width: 100%;
+  }
 
   &__title {
     font-size: 36px;
@@ -14,14 +27,18 @@
   }
 
   &__box {
+    height: 81px;
     display: flex;
+    cursor: pointer;
+    min-width: 155px;
+    border-radius: 4px;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 81px;
     border: 1px solid $light-grey-color;
-    border-radius: 4px;
-    cursor: pointer;
+
+    @media (min-width: 480px) {
+      width: 170px;
+    }
   }
 
   &__icon {

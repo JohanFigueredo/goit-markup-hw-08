@@ -4,10 +4,17 @@
 
   &__submit {
     border: none;
+    display: flex;
+    margin: 20px auto;
     border-radius: 4px;
     padding: 13px 28px 13px 39px;
     background: $link-hf-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    @media (min-width: 1200px) {
+      display: inline;
+      margin: 20px 0 0;
+    }
   }
 
   &__submit > span {
@@ -27,17 +34,33 @@
   }
 
   &__form {
-    padding-top: 10px;
-    margin-left: 13px;
-    width: 570px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+    @media (min-width: 1200px) {
+      display: inline;
+      padding-top: 10px;
+      width: 570px;
+    }
   }
 
   &__input {
     height: 50px;
-    width: 358px;
+    width: 450px;
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid rgba(255, 255, 255, 0.3);
+
+    @media (min-width: 1200px) {
+      width: 358px;
+      display: inline;
+      margin-right: 7px;
+    }
+
+    @media (max-width: 479px) {
+      width: 270px;
+    }
   }
 
   &__input::placeholder {
@@ -55,6 +78,11 @@
     color: $pure-white-color;
     margin-bottom: 20px;
     display: block;
+
+    @media (min-width: 1200px) {
+      margin: auto;
+      display: inline;
+    }
   }
 
   &__send-icon {
@@ -63,7 +91,14 @@
   }
 
   &__justify {
-    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (min-width: 1200px) {
+      display: inline-block;
+    }
   }
 
   &__contact {
@@ -76,21 +111,25 @@
 
   &__social-media {
     padding-top: 12px;
-    margin-left: 70px;
   }
 
   &__sm-list {
-    width: 286px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
   }
 
   &__sm-title {
+    display: flex;
     font-size: 14px;
+    margin-bottom: 20px;
     letter-spacing: 0.03em;
     color: $pure-white-color;
-    margin-bottom: 20px;
+    justify-content: center;
+
+    @media (min-width: 1200px) {
+      display: inherit;
+    }
   }
 
   &__sm-circle {
@@ -115,13 +154,36 @@
   }
 }
 
-address {
-  width: 230px;
-  font-style: inherit;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $pure-white-color;
-  margin-top: 9px;
+.address {
+  width: 232px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__content {
+    width: 230px;
+    margin-top: 9px;
+    padding: 0 26px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    font-style: inherit;
+    letter-spacing: 0.03em;
+    color: $pure-white-color;
+  }
+}
+
+.foot {
+  justify-content: center;
+  max-width: 680px;
+  flex-wrap: wrap;
+  gap: 42px;
+
+  @media (min-width: 1200px) {
+    min-width: 1200px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-between;
+  }
 }

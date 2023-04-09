@@ -1,8 +1,14 @@
 .features {
   gap: 30px;
-  padding: 0;
+  padding: 0 24px;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (min-width: 1200px) {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
 
   &__container {
     max-width: 450px;

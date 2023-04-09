@@ -95,11 +95,17 @@
     background: none;
   }
 
+  &__menu:hover,
+  &__menu:focus {
+    fill: $link-hf-color;
+  }
+
   &__title {
     gap: 30px;
     display: flex;
     flex-wrap: wrap;
     max-width: 900px;
+    padding: 200px 0;
   }
 }
 

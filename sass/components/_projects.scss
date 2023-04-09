@@ -17,13 +17,15 @@
   }
 
   &__filter {
-    padding: 0;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
     gap: 8px;
   }
 }
 
 .projects {
+  justify-content: center;
   margin: 50px 0 0 0;
   flex-wrap: wrap;
   padding: 0;

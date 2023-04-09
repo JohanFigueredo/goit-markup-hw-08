@@ -23,7 +23,7 @@
         <div class="mbl container">
           <a class="header__logo logo" href="./index.html">WebStudio</a>
           <nav>
-          <button class="mbl__menu" type="button">
+          <button class="mbl__menu" type="button" js-open-menu>
               <svg class="menu__open" width="40px" height="40px">
                 <use href="./images/icons.svg#icon-icon-burger"></use>
               </svg>
@@ -460,10 +460,10 @@
     </main>
     <footer class="footer">
       <section>
-        <div class="flex container">
-          <div>
+        <div class="mbl foot container">
+          <div class="address">
           <a class="logo" href="./index.html">WebStudio</a>
-          <address>Calz. Ticomán 500, Ciudad de México, CDMX, México</address>
+          <address class="address__content">Calz. Ticomán 500, Ciudad de México, CDMX, México</address>
           <ul class="footer__info">
             <li>
               <a
@@ -514,17 +514,15 @@
         </div>
         <div class="footer__form">
           <h3 class="footer__subscribe">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h3>
-          <form class="flex footer__justify">
+          <form class="footer__justify">
             <label>
               <input class="footer__input" type="email" name="email" placeholder="Correo electrónico"/>
             </label>
-            <label>
               <button class="footer__submit" type="submit">
                 <span class="flex">Suscríbase <svg class="footer__send-icon">
                   <use href="./images/icons.svg#footer__send-icon"></use>
                 </svg></span>
               </button>
-            </label>
           </form>
         </div>
       </section>
@@ -564,6 +562,33 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="menu is-hidden" js-menu-container>
+        <div class="flex menu__content">
+        <button class="menu__x-close" js-close-menu>
+          <svg width="18.67" height="18.67">
+            <use width="18.67" height="18.67" href="./images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+        <ul class="menu__navigation">
+            <li><a href="./index.html">Estudio</a></li>
+            <li><a href="./portfolio.html">Portafolio</a></li>
+            <li><a>Contactos</a></li>
+          </ul>
+          <ul class="menu__contact">
+            <li><a class="menu__phone">+38 096 111 11 11</a></li>
+            <li><a class="menu__mail">info@devstudio.com</a></li>
+          </ul>
+          <ul class="flex menu__sm">
+            <li><a>Instagram</a></li>|
+            <li><a>Twitter</a></li>|
+            <li><a>Facebook</a></li>|
+            <li><a>LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
