@@ -23,7 +23,7 @@
         <div class="mbl container">
           <a class="header__logo logo" href="./index.html">WebStudio</a>
           <nav>
-          <button class="mbl__menu" type="button" js-open-menu>
+          <button type="button" class="mbl__menu js-open-menu">
               <svg class="menu__open" width="40px" height="40px">
                 <use href="./images/icons.svg#icon-icon-burger"></use>
               </svg>
@@ -36,7 +36,7 @@
                 <a href="./portfolio.html">Portafolio</a>
               </li>
               <li class="navigation__page">
-                <a href="./contactos.html">Contactos</a>
+                <a href="">Contactos</a>
               </li>
             </ul>
           </nav>
@@ -563,9 +563,9 @@
       </div>
     </section>
     <section>
-      <div class="menu is-hidden" js-menu-container>
+      <div class="menu js-menu-container" id="mobile-menu">
         <div class="flex menu__content">
-        <button class="menu__x-close" js-close-menu>
+        <button class="menu__x-close js-close-menu">
           <svg width="18.67" height="18.67">
             <use width="18.67" height="18.67" href="./images/icons.svg#icon-x"></use>
           </svg>
@@ -575,6 +575,7 @@
             <li><a href="./portfolio.html">Portafolio</a></li>
             <li><a>Contactos</a></li>
           </ul>
+          <div class="menu__communication">
           <ul class="menu__contact">
             <li><a class="menu__phone">+38 096 111 11 11</a></li>
             <li><a class="menu__mail">info@devstudio.com</a></li>
@@ -584,7 +585,7 @@
             <li><a>Twitter</a></li>|
             <li><a>Facebook</a></li>|
             <li><a>LinkedIn</a></li>
-          </ul>
+          </ul></div>
         </div>
       </div>
     </section>

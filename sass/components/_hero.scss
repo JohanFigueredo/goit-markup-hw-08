@@ -1,17 +1,27 @@
 .hero {
   background: #2f303a;
-  background: url(../images/banner.jpg);
+  background: url(../images/mobile-banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (min-width: 1200px) {
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   &__title {
     width: 696px;
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     color: $pure-white-color;
+
+    @media (min-width: 1200px) {
+      font-size: 44px;
+    }
   }
 
   &__button {
