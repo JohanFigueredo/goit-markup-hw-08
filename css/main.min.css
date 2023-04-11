@@ -31,6 +31,11 @@ body {
 .semi-section {
   padding: 94px 0 0 0;
 }
+@media (max-width: 1199px) {
+  .semi-section {
+    padding: 94px 0;
+  }
+}
 
 .container {
   max-width: 1200px;
@@ -289,16 +294,15 @@ a:focus {
     max-width: 270px;
   }
 }
-.operations {
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-@media (min-width: 1200px) {
-  .operations {
-    justify-content: space-between;
-    gap: 0;
+@media (max-width: 1199px) {
+  .ops {
+    display: none;
   }
+}
+
+.operations {
+  justify-content: space-between;
+  gap: 0;
 }
 
 .operation {

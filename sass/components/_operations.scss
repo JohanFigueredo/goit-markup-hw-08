@@ -1,12 +1,12 @@
-.operations {
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-
-  @media (min-width: 1200px) {
-    justify-content: space-between;
-    gap: 0;
+.ops {
+  @media (max-width: 1199px) {
+    display: none;
   }
+}
+
+.operations {
+  justify-content: space-between;
+  gap: 0;
 }
 
 .operation {

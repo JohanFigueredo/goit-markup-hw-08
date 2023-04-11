@@ -37,6 +37,9 @@ body {
 
 .semi-section {
   padding: 94px 0 0 0;
+  @media (max-width: 1199px) {
+    padding: 94px 0;
+  }
 }
 
 .container {
